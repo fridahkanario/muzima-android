@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.action_settings) {
             return true;
         }else if(id==R.id.item1){
+        	//Execute POST and send data to server
             ProcessQueueuDataHandler.POST( new URL("server/url"),"newObs","oldObs", new Date());
             return true;
         }
